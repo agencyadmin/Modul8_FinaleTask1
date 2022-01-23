@@ -2,10 +2,7 @@
   "profiles": {
     "Modul8_FinaleTask1": {
       "commandName": "Project",
-      "commandLineArgs": "@\"C:\\Users\\wmtra\\Desktop\\TestDir\\Modul8_Task1\"",
-      "environmentVariables": {
-        "arg": "@\"C:\\Users\\wmtra\\Desktop\\TestDir\\Modul8_Task1\""
-      }
+      "commandLineArgs": "@\"C:\\Users\\wmtra\\Desktop\\TestDir\\Modul8_Task1\""
     }
   }
 }
