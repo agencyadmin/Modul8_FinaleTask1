@@ -30,7 +30,7 @@ class Program
                 {
                     File.Delete(d);
                     Console.WriteLine("Файл " + d + " была создана: " + File.GetLastAccessTimeUtc(d) + " и будет удален через: " + (DateTime.Now - File.GetLastAccessTimeUtc(d)));
-                    Console.WriteLine("Файл " + d + " удален: " + DateTime.Now);
+                    Console.WriteLine("Файл " + d + " удален:  " + DateTime.Now);
                 }
             }
         }
