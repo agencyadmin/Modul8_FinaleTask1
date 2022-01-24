@@ -23,6 +23,7 @@ namespace FileScaner
             Console.WriteLine($"Удалено: {DirectoryExtension.ClearDir(dir)} файлов.");
             Console.WriteLine($"Освобождено: {initialSize - DirectoryExtension.DirSize(dir)} байт. ");
             Console.WriteLine($"Размер папки после чистки: {DirectoryExtension.DirSize(dir)} байт.");
+            Console.WriteLine($"После чистки количество файлов в папке: {DirectoryExtension.DirFile(dir)} байт. ");
             Console.WriteLine("_________________________________________________________________________________________________");
 
             //if (Directory.Exists(TargetFolder)) 
