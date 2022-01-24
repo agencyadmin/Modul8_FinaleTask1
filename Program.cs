@@ -14,12 +14,15 @@ namespace FileScaner
             long initialSize = DirectoryExtension.DirSize(dir);
             string TargetFolder = args[0]; //@"C:\Users\wmtra\Desktop\TestDir\Modul8_Task1";  
             Console.WriteLine($"Исходный размер папки: {DirectoryExtension.DirSize(dir)} байт");
+            Console.WriteLine($"Исходное количество файлов в папке: {DirectoryExtension.DirFile(dir)} байт. ");
+            
             Console.WriteLine("************************************************************************************************");
-            // Console.WriteLine($"Папка содержит поддериктории и файлы в них: {Directory.GetFileSystemEntries(TargetFolder)} байт");
+            // Console.WriteLine($"Папка содержит поддериктории и файлы в них: {Directory.GetFileSystemEntries(TargetFolder)} байт"); // разобраться как работает
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-            Console.WriteLine($"Освобождено: {initialSize - DirectoryExtension.DirSize(dir)} байт. ");
+            
             Console.WriteLine($"Удалено: {DirectoryExtension.ClearDir(dir)} файлов.");
-            Console.WriteLine($"Текущий размер папки: {DirectoryExtension.DirSize(dir)} байт.");
+            Console.WriteLine($"Освобождено: {initialSize - DirectoryExtension.DirSize(dir)} байт. ");
+            Console.WriteLine($"Размер папки после чистки: {DirectoryExtension.DirSize(dir)} байт.");
             Console.WriteLine("_________________________________________________________________________________________________");
 
             //if (Directory.Exists(TargetFolder)) 

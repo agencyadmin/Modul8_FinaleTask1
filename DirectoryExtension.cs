@@ -62,6 +62,7 @@ namespace  FileScaner
                         if (File.GetLastAccessTime(fi.FullName) <= DateTime.Now.AddMinutes(-30))
                         {
                             File.Delete(fi.FullName);
+                            Console.WriteLine($"Удален файл: {fi.FullName} размером {fi.Length} байт. ");
                             deleted ++;
                         }
                     }
